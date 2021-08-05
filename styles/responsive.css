@@ -1,5 +1,5 @@
 /*Media queries*/
-@media (max-width: 500px){
+@media (max-width: 700px){
     *{
         font-size: 16px;;
     }
@@ -36,17 +36,44 @@
     /*About me*/
     .about-me{
         grid-template-columns: repeat(5, 1fr);
-/*grid-template-rows: auto auto;*/
+        gap: 0;
     }
 
     .about-me-illustration{
         grid-column: 4 / span 2;
-        /*grid-row: 1 /span 1;*/
     }
     .about-me-content{
         grid-column: 1 /span 3;
         padding: 10px 20px;
     }
 
+    /*Projects*/
+    .projects{
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+    }
+
+    .projects-illustration{
+        grid-column: 1 / span 2;
+    }
+
+    .projects-content{
+        grid-column: 3 / span 3;
+        padding: 10px 20px;
+    }
+
+    .projects-grid-card{
+        margin: 0px;
+        width: 100%;
+    }
+
+    .projects-grid{
+        margin: 0;
+    }
+
+    /*footer*/
+    .contact-form{
+        grid-column: 1/8;
+    }
 
 }
