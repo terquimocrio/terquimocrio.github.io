@@ -76,4 +76,32 @@
         grid-column: 1/8;
     }
 
+    .nav-main ul.nav-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #174483;
+        height: 100%;
+        width: 50%;
+        opacity: 0.9;
+        text-align: center;
+        transform: translate(-400px);
+        transition: transform 0.5s ease-in-out;
+        /*padding: 30px;*/
+    }
+
+    .nav-main ul li{
+        padding:20px;
+        margin: 10px 10px;
+    }
+
+    .nav-main ul li a{
+        color: white;
+    }
+
+    .nav-main .nav-menu.show {
+        transform: translateX(-20px);
+    }
+
 }
