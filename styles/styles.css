@@ -65,6 +65,18 @@ a:visited{
     align-items: center;
 }
 
+/*Menu btn*/
+.menu-btn {
+    cursor: pointer;
+    z-index: 2;
+    color: black;
+    display: none;
+}
+
+.menu-btn i{
+    font-size: 30px;
+}
+
 /*Home presentation*/
 
 .home-presentation{
@@ -252,18 +264,6 @@ textarea{
 
 .header hr{
     margin: 0;
-}
-
-/*Menu btn*/
-.menu-btn {
-    cursor: pointer;
-    z-index: 2;
-    color: black;
-    display: none;
-}
-
-.menu-btn i{
-    font-size: 30px;
 }
 
 /*pseudoclasses*/
