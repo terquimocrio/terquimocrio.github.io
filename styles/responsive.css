@@ -55,6 +55,7 @@
 
     .projects-illustration{
         grid-column: 1 / span 2;
+        margin: 0 10px;
     }
 
     .projects-content{
@@ -104,4 +105,15 @@
         transform: translateX(-20px);
     }
 
+    .menu-btn{
+        display: block;
+    }
+
+}
+
+
+@media (min-width: 1680px){
+    body{
+        background: url(/svg/background-large.svg);
+    }
 }
