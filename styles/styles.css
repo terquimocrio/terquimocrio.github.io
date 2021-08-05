@@ -4,7 +4,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    color: white;
+    /*color: white;*/
     font-size: 22px;
     font-family: 'Alegreya Sans', sans-serif;
 }
@@ -13,6 +13,7 @@
 body{
     /*: gray;*/
     background: url(/svg/background.svg);
+    color: white;
     /*background: #174483;*/
 }
 
@@ -24,6 +25,7 @@ h2{
 a:visited{
     color: black;
 }
+
 
 .container{
     margin: 0 auto 0 auto;
@@ -211,6 +213,7 @@ textarea{
     font-family: 'Alegreya Sans', sans-serif;
 }
 
+
 .button{
     cursor: pointer;
     background: #A00C34;
@@ -249,3 +252,13 @@ textarea{
     margin: 0;
 }
 
+
+.menu-btn {
+    cursor: pointer;
+    z-index: 2;
+    color: black;
+}
+
+.menu-btn i{
+    font-size: 30px;
+}
