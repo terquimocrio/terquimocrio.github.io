@@ -2,16 +2,6 @@ let resize = false;
 
 document.querySelector(".menu-btn").addEventListener("click", () => {
   document.querySelector(".nav-menu").classList.toggle("show");
-  if (document.querySelector(".nav-menu").classList.contains("show")) {
-    document.querySelector(
-      ".nav-menu"
-    ).style.height = `${document.body.clientHeight}px`;
-  }
-  else{
-    document.querySelector(
-      ".nav-menu"
-    ).style.height = `100%`;
-  }
 });
 
 ScrollReveal().reveal(".container", { delay: 100 });
@@ -44,18 +34,6 @@ const arr = [...nav.getElementsByTagName("a")];
 arr.forEach((el) => {
   el.addEventListener("click", () => {
     document.querySelector(".nav-menu").classList.toggle("show");
-    document.querySelector(
-      ".nav-menu"
-    ).style.height = `100%`;
+    document.querySelector(".nav-menu").style.height = `100%`;
   });
 });
-
-window.addEventListener("resize", () => {
-  console.log(document.body.clientWidth + ' wide by ' + document.body.clientHeight+' high');
-  if(document.body.clientWidth >= 700 && resize === true && !document.querySelector(".nav-menu").classList.contains("show")){
-    document.querySelector(".nav-menu").classList.toggle("show");
-    resize = false;
-  }else{
-    resize = true;
-  }
-})
