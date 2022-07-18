@@ -121,6 +121,10 @@ a:visited{
     height: auto;
 }
 
+.about-me-technologies{
+    margin-left: 42px;
+}
+
 /*Projects*/
 
 .projects{

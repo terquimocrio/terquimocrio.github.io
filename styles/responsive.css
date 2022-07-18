@@ -47,6 +47,7 @@
         padding: 10px 20px;
     }
 
+
     /*Projects*/
     .projects{
         grid-template-columns: repeat(5, 1fr);
